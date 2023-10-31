@@ -1,0 +1,19 @@
+ALGORITHM calcule_longuer_des_phrases_nb_de_mots_nb_de_voyelles
+VAR
+    long_phrase, nb_de_mots, nb_de_voyelles:INTEGER;
+BEGIN
+    Read(long_de_phrase);
+    Read(nb_de_mots);
+    Read(nb_de_voyelles);
+IF (Le caractère est une lettre(a,e,i,o,u,A,E,I,O,U)): THEN
+    Nombre de voyelles <-nb_de_voyelles.+1 
+END_IF
+IF (le caractère est un espace ('')): THEN
+    Si le caractère précédent nest pas un espace:
+    Nombre nb_de_mots <-nb_de_mots +1
+    Si le dernier caractère est une lettre,incremente le nb_de_mots 1
+END_IF
+    Write(long_de_phrase );
+    Write( nb_de_mots);
+    Write(nb_de_voyelles );
+END
